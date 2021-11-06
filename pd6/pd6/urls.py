@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('', include('solarpv.urls'))
+    path('', include('solarpv.urls')),
+    path('api/', include('backend.api.url', namespace='api'))
 ]
