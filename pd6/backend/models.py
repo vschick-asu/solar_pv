@@ -30,6 +30,19 @@ class TestResults(models.Model):
     pmp = models.CharField(max_length=20)
     ff = models.CharField(max_length=20)
     noct = models.CharField(max_length=20)
+class Service(models.Model):
+    service_name                    = models.CharField(max_length=20)
+    description                     = models.CharField(max_length=20)
+    is_fi_required                  = models.CharField(max_length=20)
+    standard_id                     = models.IntegerField()
+class Certificate(models.Model):
+    id                              = models.IntegerField(primary_key=True)
+    userID                          = models.IntegerField()
+    report_number                   = models.IntegerField()
+    issue_date                      = models.IntegerField()
+    standard_id                     = models.IntegerField()
+    location_id                     = models.IntegerField()
+    model_number                    = models.IntegerField()
 class Product(models.Model):
     modelNumber                     = models.IntegerField()
     length                          = models.IntegerField()
