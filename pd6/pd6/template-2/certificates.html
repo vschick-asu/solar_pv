@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Vladimir Schick -->
+    <title>solarPV - your solar destination</title>
+    <link rel="stylesheet" href="http://localhost:8000/STATIC/style.css">
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body background="http://localhost:8000/STATIC/background-2.jpg">
+    <div class="title-1">
+      <div class="title-2">
+        <img src="http://localhost:8000/STATIC/solarpv.png">
+      </div>
+    </div>
+    <ul>
+      <li><a href="http://localhost:8000">Home</a></li>
+      <li><a href="http://localhost:8000/pv_technology">PV Technology</a></li>
+      <li><a href="http://localhost:8000/pv_modules">PV Modules</a></li>
+      <li><a href="http://localhost:8000/pv_panels">PV Panels</a></li>
+      <li><a href="http://localhost:8000/contact_us">Contact Us</a></li>
+      <li><a href="http://localhost:8000/join">Join</a></li>
+      <li><a href="http://localhost:8000/certificates">Testing and Certification</a></li>
+      <li><a href="http://localhost:8000/dashboard">Dashboard</a></li>
+
+
+    </ul>
+    <div class="body-1">
+      <div class="body-2">
+        Feel free to search all of our certificates!
+        <form>
+          <label for="search_cert">Certificate:</label>
+          <input type="text" id="cert" name="cert">
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="search"></label>
+            <div class="col-md-4">
+              <button id="search" name="singlebutton" class="btn btn-primary" onclick="togglePopup()">Submit</button>
+            </div>
+          </div>
+
+
+          <div class="content">
+            <div onclick="togglePopup()" class="close-btn">
+                ×
+            </div>
+            <h3>Thanks!</h3>
+            <p>
+                Thank you for searching through our certificates!
+            </p>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="body-1">
+        <div class="body-2">
+          SolarPV - your solar technology destination!
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

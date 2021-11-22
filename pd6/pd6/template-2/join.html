@@ -3,24 +3,26 @@
   <head>
     <!-- Vladimir Schick -->
     <title>solarPV - your solar destination</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://localhost:8000/STATIC/style.css">
     <script type="text/javascript" src="scripts.js"></script>
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
   </head>
-  <body background="media/images/site/background-2.jpg">
+  <body background="http://localhost:8000/STATIC/background-2.jpg">
     <div class="title-1">
       <div class="title-2">
-        <img src="media/images/site/solarpv.png">
+        <img src="http://localhost:8000/STATIC/solarpv.png">
       </div>
     </div>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pv_technology.html">PV Technology</a></li>
-      <li><a href="pv_modules.html">PV Modules</a></li>
-      <li><a href="pv_panels.html">PV Panels</a></li>
-      <li><a href="contact_us.html">Contact Us</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="http://localhost:8000">Home</a></li>
+      <li><a href="http://localhost:8000/pv_technology">PV Technology</a></li>
+      <li><a href="http://localhost:8000/pv_modules">PV Modules</a></li>
+      <li><a href="http://localhost:8000/pv_panels">PV Panels</a></li>
+      <li><a href="http://localhost:8000/contact_us">Contact Us</a></li>
+      <li><a href="http://localhost:8000/join">Join</a></li>
+      <li><a href="http://localhost:8000/certificates">Testing and Certification</a></li>
+      <li><a href="http://localhost:8000/dashboard">Dashboard</a></li>
+
     </ul>
     <div class="body-1">
       <div class="body-2">
@@ -180,12 +182,10 @@
           <label class="col-md-4 control-label" for="register">Register!</label>
           <div class="col-md-4">
             <button id="register" name="singlebutton" class="btn btn-primary" onclick="togglePopup()">Submit</button>
-<!--            <button id="register" name="singlebutton" class="btn btn-primary">Submit</button> -->
           </div>
         </div>
       </td>
       <td>
-
     <!-- div containing the popup -->
     <div class="content">
         <div onclick="togglePopup()" class="close-btn">

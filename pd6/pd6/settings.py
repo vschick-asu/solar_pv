@@ -61,7 +61,7 @@ ROOT_URLCONF = 'pd6.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['pd6/template/solarpv/html_files/'],
+        'DIRS': ['pd6/template/solarpv/html_files/', 'pd6/template-2'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

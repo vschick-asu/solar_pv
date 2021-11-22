@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Vladimir Schick -->
+    <title>solarPV - your solar destination</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts.js"></script>
+  </head>
+  <body background="media/images/site/background-2.jpg">
+    <div class="title-1">
+      <div class="title-2">
+        <img src="media/images/site/solarpv.png">
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pv_technology.html">PV Technology</a></li>
+      <li><a href="pv_modules.html">PV Modules</a></li>
+      <li><a href="pv_panels.html">PV Panels</a></li>
+      <li><a href="contact_us.html">Contact Us</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="certificates.html">Testing and certification</a></li>
+    </ul>
+    <div class="body-1">
+      <div class="body-2">
+         {% block content %}
+         {% for cert in certificate_list %}
+         {{ cert.issue_date}}
+         {% endfor %}
+         {{ thing }}
+         {% endblock %}
+      </div>
+    </div>
+    <footer>
+      <div class="body-1">
+        <div class="body-2">
+          SolarPV - your solar technology destination!
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

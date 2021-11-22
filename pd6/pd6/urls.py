@@ -18,5 +18,5 @@ from django.urls import path,include
 
 urlpatterns = [
     path('', include('solarpv.urls')),
-    path('api/', include('backend.api.url', namespace='api'))
+    path('api/', include('backend.api.url', namespace='api')),
 ]
