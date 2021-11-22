@@ -8,10 +8,18 @@ services:
       - MARIADB_DATABASE=solarpv
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: python manage.py runserver 0.0.0.0:8000 --insecure
     volumes:
       - .:/code
     ports:
       - "8000:8000"
     depends_on:
       - db
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.nginx-solarpv.rule=Host(`solarpv.tarxzvf.com`)"
+      - "traefik.http.routers.nginx-solarpv.entrypoints=websecure"
+      - "traefik.http.routers.nginx-solarpv.tls.certresolver=myresolver"
+      - "traefik.http.routers.nginx-solarpv.tls=true"
+      - "traefik.http.services.nginx-solarpv.loadbalancer.server.scheme=http"
+      - "traefik.http.services.nginx-solarpv.loadbalancer.server.port=8000"
